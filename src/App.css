@@ -1,0 +1,97 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/bgangel.png");
+  background-size: contain;
+  background-position: center left;
+}
+
+.angel-image {
+  animation: fade-right 1s ease-in-sine;
+}
+
+.text-container {
+  margin-bottom: 90px;
+  position: relative;
+  animation: fade-left 1s ease-in-sine;
+}
+
+.title {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 98px;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 30px;
+  color: #ffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  width: 600px;
+  line-height: 1.1;
+  margin-top: 20px;
+}
+
+.description {
+  margin: 0;
+  color: #216a97;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 600px;
+}
+
+.play-button {
+  margin-top: 30px;
+  padding: 16px 32px;
+  background-color: #6fc7fedc;
+  border: none;
+  border-radius: 52px;
+  cursor: pointer;
+  font-size: 26px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 2px 8px 8px rgba(131, 130, 130, 0.8);
+}
+
+@media (max-width: 768px) {
+  .container {
+    background-size: contain;
+    background-position: center center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .angel-image {
+    position: absolute;
+    top: -20px;
+  }
+
+  .text-container {
+    margin-top: 430px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .subtitle,
+  .description {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .play-button {
+    width: 80%;
+    padding: 14px 28px;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+}
