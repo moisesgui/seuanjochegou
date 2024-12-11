@@ -8,7 +8,6 @@ import gospelMusic from "./assets/oceans-music.mp3";
 function App() {
   const audioRef = useRef(null);
 
-  // Inicia AOS para animações
   AOS.init();
 
   const handlePlayPause = () => {
