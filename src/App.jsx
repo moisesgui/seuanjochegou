@@ -48,6 +48,7 @@ function App() {
         data-aos-easing="ease-in-sine"
         style={{
           marginBottom: "90px",
+          position: "relative",
         }}
       >
         <h1
@@ -86,26 +87,24 @@ function App() {
           Clique no botão abaixo, e ouça uma linda e potente musica, equanto
           você se delicia com esse maravilhoso panetone. Lembre-se DEUS TE AMA!
         </p>
+        <button
+          onClick={handlePlayPause}
+          style={{
+            marginTop: "30px",
+            padding: "16px 32px",
+            backgroundColor: "#6fc7fedc",
+            border: "none",
+            borderRadius: "52px",
+            cursor: "pointer",
+            fontSize: "26px",
+            color: "#fff",
+            fontWeight: "bold",
+            boxShadow: "2px 8px 8px rgba(131, 130, 130, 0.8)",
+          }}
+        >
+          🎵 Clique para ouvir
+        </button>
       </div>
-      <button
-        onClick={handlePlayPause}
-        style={{
-          position: "absolute",
-          top: "520px",
-          left: "42%",
-          padding: "16px 32px",
-          backgroundColor: "#6fc7fedc",
-          border: "none",
-          borderRadius: "52px",
-          cursor: "pointer",
-          fontSize: "26px",
-          color: "#fff",
-          fontWeight: "bold",
-          boxShadow: "2px 8px 8px rgba(131, 130, 130, 0.8)",
-        }}
-      >
-        🎵 Clique para ouvir
-      </button>
     </div>
   );
 }
